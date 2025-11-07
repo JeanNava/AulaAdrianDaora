@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 4,
+  "agentName": "CTU-03-17",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus10.actions.githubusercontent.com/4Xd4CQKKskLFeVaxlwYjHpwpUEraR2zvqLVaeOSlLTJ9Wp9pdN/",
+  "gitHubUrl": "https://github.com/JeanNava/AulaAdrianDaora",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

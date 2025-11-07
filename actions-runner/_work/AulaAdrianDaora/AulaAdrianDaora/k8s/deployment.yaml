@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trabaio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trabaio
+  template:
+    metadata:
+      labels:
+        app: trabaio
+    spec:
+      containers:
+        - name: trabaio
+          image: jeannava/trabaio:latest
+          imagePullPolicy: Always 
+          ports:
+          - containerPort: 3123

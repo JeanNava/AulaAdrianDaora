@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "JeanNava/AulaAdrianDaora",
+  "pipelineDirectory": "AulaAdrianDaora",
+  "workspaceDirectory": "AulaAdrianDaora\\AulaAdrianDaora",
+  "repositories": {
+    "JeanNava/AulaAdrianDaora": {
+      "repositoryPath": "AulaAdrianDaora\\AulaAdrianDaora",
+      "lastRunOn": "11/07/2025 20:24:08 -03:00"
+    }
+  },
+  "lastRunOn": "11/07/2025 20:24:08 -03:00"
+}
