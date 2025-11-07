@@ -1,0 +1,23 @@
+minikube start --driver=docker # Inicia o kubernets usando o driver do docker
+
+kubectl get pods # lista os containers
+
+& minikube -p minikube docker-env | invoke-expression
+
+docker build -t trabaio .
+
+docker images
+
+kubectl apply -f ./k8s/
+kubectl get pods
+
+minikube service prometheus
+minikube service grafana
+minikube service trabaio
+
+ngnixdeployment
+nginxk8s -> defaultconfig/dockerfile
+
+nginx -> rodar o minikube do nginx
+
+Senha Grafana => TesteSenhaTrabalho

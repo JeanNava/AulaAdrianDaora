@@ -1,0 +1,63 @@
+minikube delete
+
+docker system prune -a --volumes
+
+---------------------------------------------------------------------------------------------------
+
+minikube start --driver=docker
+
+
+
+minikube docker-env | Invoke-Expression
+
+docker build -t trabaio:latest .
+
+
+
+cd nginx
+
+docker build -t nginx-proxy:latest .
+
+cd ..
+
+
+
+kubectl apply -f k8s/
+
+kubectl get pods
+
+
+
+minikube service nginx-service --url
+
+----------------------------------------------------------------------------------------------------
+
+minikube start --driver=docker
+
+
+
+minikube docker-env | Invoke-Expression
+
+docker build -t trabaio:latest .
+
+
+
+cd nginx
+
+docker build -t nginx-proxy:latest .
+
+cd ..
+
+
+
+kubectl apply -f k8s/
+
+kubectl get pods
+
+kubectl patch service nginx-service -p '{\"spec\": {\"type\": \"LoadBalancer\"}}'
+
+minikube tunnel
+
+
+
+http://localhost/
